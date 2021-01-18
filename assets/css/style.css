@@ -1,0 +1,387 @@
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+.white-text {
+    color: #fff;
+}
+
+
+/* HEADER */
+
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+
+/* navigation */
+
+#header .nav {
+    display: inline-block;
+}
+
+#header .nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#header .nav li a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+#header>.nav>li:hover>a,
+#header .subnav li:hover a {
+    background-color: #ccc;
+    color: #000;
+    border-radius: 3px;
+}
+
+#header .nav li:hover .subnav li {
+    display: block;
+    border-radius: 3px;
+}
+
+#header .subnav {
+    position: absolute;
+    background-color: #fff;
+}
+
+#header .subnav li {
+    display: none;
+    width: 160px;
+}
+
+#header .subnav li a {
+    text-transform: capitalize;
+    font-size: 15px;
+    color: #000;
+    display: block;
+    padding: 0 16px;
+    line-height: 38px;
+}
+
+
+/* search button */
+
+#header .search-button {
+    color: #fff;
+    float: right;
+    line-height: 46px;
+    padding: 0 23px;
+}
+
+#header .search-button:hover {
+    background-color: #f44336;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+/* SLIDER */
+
+#slider {
+    margin-top: 46px;
+    background: url("/assets/img/slider1.jpg") top center / cover no-repeat;
+    padding-top: 50%;
+    position: relative;
+}
+
+#slider .slider-text {
+    padding: 47px 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#slider .slider-text h3 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#slider .slider-text p {
+    font-size: 15px;
+    margin-top: 25px;
+    font-weight: 700;
+}
+
+
+/* CONTENT */
+
+#content .content-section {
+    width: 800px;
+    margin: 0 auto;
+    padding: 64px 16px;
+}
+
+#content .section-heading {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#content .section-comment {
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+    opacity: 0.6;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+
+/* band */
+
+#content .band-text {
+    font-size: 15px;
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 1.4;
+    text-transform: inherit;
+}
+
+#content .band-member {
+    padding: 32px 0;
+}
+
+#content .member {
+    float: left;
+    text-align: center;
+}
+
+#content .member .member-name {
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+#content .member .member-img {
+    width: 60%;
+    border-radius: 4px;
+}
+
+
+/* tour */
+
+#content .tour-infor {
+    width: 100%;
+    background-color: #000;
+    position: relative;
+}
+
+#content .ticket-list {
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+#content .ticket-list li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+    color: #757575;
+    list-style: none;
+}
+
+#content .ticket-list .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 6px;
+    margin-left: 16px;
+}
+
+#content .ticket-list .quality {
+    float: right;
+    background-color: #000;
+    width: 22px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    margin-top: -1.5px;
+    margin-right: 16px;
+}
+
+#content .place-list {
+    padding-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+#content .place-list .place-item {
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px 48px;
+}
+
+#content .place-list .place-img {
+    width: 100%;
+    display: block;
+}
+
+#content .place-list .place-img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#content .place-list .place-content {
+    background-color: #fff;
+    font-size: 15px;
+    padding: 0 16px;
+}
+
+#content .place-list .place-content .place-name {
+    display: inline-block;
+    margin-top: 16px;
+    text-transform: capitalize;
+}
+
+#content .place-list .place-time {
+    margin: 15px 0;
+    color: #757575;
+}
+
+#content .place-list .place-desc {
+    margin: 15px 0;
+    line-height: 1.4;
+}
+
+#content .place-list .buy-ticket {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    display: inline-block;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+}
+
+#content .place-list .buy-ticket:hover {
+    background-color: #f44336;
+}
+
+
+/* contact */
+
+#content .contact-content {
+    padding: 32px 0;
+}
+
+#content .contact-infor {
+    margin-bottom: 16px;
+    float: left;
+    width: 50%;
+}
+
+#content .contact-infor li {
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+#content .contact-infor i {
+    margin-right: 16px;
+}
+
+#content .name-mail input {
+    width: 183px;
+}
+
+#content #name {
+    float: left;
+}
+
+#content #mail {
+    float: right;
+}
+
+#content .contact-button {
+    width: 50%;
+    float: right;
+    margin-top: -90px;
+}
+
+#content .contact-button input {
+    font-size: 15px;
+    padding: 10px 12px;
+    border: 1px solif #ddd;
+}
+
+#content #message {
+    margin-top: 8px;
+    width: 100%;
+}
+
+#content .submit-button {
+    float: right;
+    margin: 16px 0;
+    color: #fff;
+    background-color: #000;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+#content .submit-button:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#content .content-map img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* FOOTER */
+
+#footer {
+    width: 100%;
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .footer-icon a {
+    font-size: 25px;
+    color: #757575;
+}
+
+#footer .footer-icon a:hover,
+#footer .copyright a:hover {
+    color: rgb(168, 166, 166);
+}
+
+#footer .copyright {
+    font-size: 15px;
+    margin: 20px 0 15px;
+    color: #757575;
+}
+
+#footer .copyright a {
+    color: #757575;
+}
