@@ -1,255 +1,74 @@
-<!-- Chọn tên id Ctrl Shift L -> Alt Shift hướng mũi tên sang phải
-    Giữ Alt -->
+<!DOCTYPE html>
+<html lang="en">
 
-    <!DOCTYPE html>
-    <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>The Band</title>
-        <link rel="icon" href="https://img.icons8.com/clouds/2x/garage-band.png" type="image/gif">
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/font-awesome/fontawesome-free-5.15.1-web/css/all.css">
-    </head>
-    
-    <body>
-        <!-- Wrapper -->
-        <div id="wrapper">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.css">
+</head>
+
+<body>
+
+    <div class="player">
+        <!-- dashboard -->
+        <div class="dashboard">
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb" style="background-image: url('https://avatar-ex-swe.nixcdn.com/song/2021/08/11/4/7/2/b/1628655927032_500.jpg')"></div>
+            </div>
+
             <!-- Header -->
-            <div id="header">
-                <!-- Navigation -->
-                <ul id="nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#band-content">Band</a></li>
-                    <li><a href="#tour-content">Tour</a></li>
-                    <li><a href="#contact-content">Contact</a></li>
-                    <li>
-                        <a href="#">More <i class="fas fa-caret-down"></i></a>
-                        <ul class="subnav">
-                            <li><a href="#">Merchandise</a></li>
-                            <li><a href="#">Extras</a></li>
-                            <li><a href="#">Media</a></li>
-                        </ul>
-                    </li>
-                </ul>
+            <header>
+                <h2></h2>
+                <h4></h4>
+            </header>
 
-                <!-- Seach Button -->
-                <div id="search-button">
-                    <i class="fas fa-search"></i>
+            <!-- progress -->
+            <div class="progress">
+                <div class="time">
+                    <span class="time-left">0:00</span>
+                    <span class="time-right">0:00</span>
                 </div>
+                <input class="progress-input" type="range" name="" id="" step="1" value="0" min="0" max="100">
+            </div>
 
-                <!-- Menu Mobile Icon -->
-                <div id="menu-mobile">
-                    <i class="fas fa-bars"></i>
+            <!-- Control -->
+            <div class="control">
+                <div class="btn repeat-btn">
+                    <i class="fas fa-retweet"></i>
+                </div>
+                <div class="btn back-btn">
+                    <i class="fas fa-backward"></i>
+                </div>
+                <div class="btn toggle-play-btn">
+                    <i class="fas fa-pause pause-icon"></i>
+                    <i class="fas fa-play play-icon"></i>
+                </div>
+                <div class="btn next-btn">
+                    <i class="fas fa-forward"></i>
+                </div>
+                <div class="btn random-btn">
+                    <i class="fas fa-random"></i>
                 </div>
             </div>
 
-            <!-- Slider -->
-            <div id="slider">
-                
-                <div class="main-slider">
-                    <div class="slider-img-item col-third">
-                        <img class = "img-item" src="./assets/img/chicago.jpg" alt="">
-                        <div class="slider-content">
-                            <h3 class="slider-heading">Chicago</h3>
-                            <b class="slider-desc">Thank you, Chicago - A night we won't forget.</b>
-                        </div>
-                    </div>
-
-                    <div class="slider-img-item col-third">
-                        <img class = "img-item" src="./assets/img/la.jpg" alt="">
-                        <div class="slider-content">
-                            <h3 class="slider-heading">Los Angeles</h3>
-                            <b class="slider-desc">We had the best time playing at Venice Beach!</b>
-                        </div>
-                    </div>
-
-                    <div class="slider-img-item col-third">
-                        <img class = "img-item" src="./assets/img/ny.jpg" alt="">
-                        <div class="slider-content">
-                            <h3 class="slider-heading">New York</h3>
-                            <b class="slider-desc">The atmosphere in New York is lorem ipsum.</b>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                    
-
-               
-            </div>
-
-            <!-- Content -->
-            <div id="content">
-                <!-- The Band -->
-                <div id="band-content">
-                    <div class="content-section">
-                        <div class="section-title">
-                            <h2 class="section-heading">THE BAND</h2>
-                            <i class="section-sub-heading">We love music</i>
-                        </div>
-                        <p class="band-desc">
-                            We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <div class="row member-list">
-                            <div class="col col-third center-text s-col-full mt-16">
-                                <p class="member-name">Name</p>
-                                <img src="./assets/img/member-img.jpg" alt="" class="member-img s-w-60">
-                            </div>
-                            <div class="col col-third center-text s-col-full mt-16">
-                                <p class="member-name">Name</p>
-                                <img src="./assets/img/member-img.jpg" alt="" class="member-img s-w-60">
-                            </div>
-                            <div class="col col-third center-text s-col-full mt-16">
-                                <p class="member-name">Name</p>
-                                <img src="./assets/img/member-img.jpg" alt="" class="member-img s-w-60">
-                            </div>
-                            <!-- <div class="clear"></div> -->
-                        </div>
-                    </div> 
-                </div>
-
-                <!-- Tour Dates -->
-                <div id="tour-content">
-                    <div class="content-section">
-                        <div class="section-title white-text">
-                            <h2 class="section-heading">TOUR DATES</h2>
-                            <i class="section-sub-heading">Remember to book your tickets!</i>
-                        </div>
-                        <ul class="ticket-quality">
-                            <li><span class = "month">September </span><span class="sold-out">Sold out</span></li>
-                            <li><span class = "month">October </span><span class="sold-out">Sold out</span></li>
-                            <li><span class = "month">November </span><span class="quality">3</span></li>
-                        </ul>
-                        <div class="row tour-places">
-                            <div class="col col-third place-item">
-                                <img src="./assets/img/newyork.jpg" alt="" class="place-img">
-                                <div class="place-desc">
-                                    <b class="place-name">New York</b>
-                                    <p class="place-date">Fri 27 Nov 2016</p>
-                                    <p class="place-infor">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <a href="#" class="btn s-full-width">Buy Tickets</a>
-                                </div>
-                            </div>
-                            <div class="col col-third place-item">
-                                <img src="./assets/img/paris.jpg" alt="" class="place-img">
-                                <div class="place-desc">
-                                    <b class="place-name">Paris</b>
-                                    <p class="place-date">Sat 28 Nov 2016</p>
-                                    <p class="place-infor">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <a href="#" class="btn s-full-width">Buy Tickets</a>
-                                </div>
-                            </div>
-                            <div class="col col-third place-item">
-                                <img src="./assets/img/sanfran.jpg" alt="" class="place-img">
-                                <div class="place-desc">
-                                    <b class="place-name">San Francisco</b>
-                                    <p class="place-date">Sun 29 Nov 2016</p>
-                                    <p class="place-infor">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <a href="#" class="btn s-full-width">Buy Tickets</a>
-                                </div>
-                            </div>
-                            <!-- <div class="clear"></div> -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact -->
-                <div id="contact-content">
-                    <div class="content-section">
-                        <div class="section-title">
-                            <h2 class="section-heading">CONTACT</h2>
-                            <i class="section-sub-heading">Fan? Drop a note!</i>
-                        </div>
-                        <div class="row">
-                            <div class="col col-half s-col-full s-mb-16 s-p-16-8">
-                                <p><i class="fas fa-map-marker-alt"></i> Chicago, US</p>
-                                <p><i class="fas fa-phone-alt"></i> Phone: +00 151515</p>
-                                <p><i class="fas fa-envelope"></i> Email: mail@mail.com</p>
-                            </div>
-                            <div class="col col-half s-col-full">
-                                <form action="">
-                                    <div class="row">
-                                        <div class="col col-half s-col-full">
-                                            <input type="text" name="" id="" class="form-control" required placeholder="Name">
-                                        </div>
-                                        <div class="col col-half s-col-full">
-                                            <input type="email" name="" id="" class="form-control" required placeholder="Email">
-                                        </div>
-                                        <!-- <div class="clear"></div> -->
-                                    </div>
-                                    <div class="row">
-                                        <div class="col col-full">
-                                            <input type="text" name="" id="" class="form-control" required placeholder="Message">
-                                        </div>
-                                        <!-- <div class="clear"></div> -->
-                                    </div>
-                                    <input type="submit" value="SEND" class="btn poll-right mt-b s-full-width">
-                                </form>
-                            </div>
-                            <!-- <div class="clear"></div> -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Map Image -->
-                <div id="map-img">
-
-                </div>
-            </div>
-
-            <!-- Footer -->
-            <div id="footer">
-                <div class="footer-icons">
-                    <a href=""><i class="fab fa-facebook-square"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-snapchat"></i></a>
-                    <a href=""><i class="fab fa-pinterest-p"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <div class="copy-right">
-                    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp"><u> w3.css</u></a></p>
-                </div>
-            </div>
+            <audio id="audio" src=""></audio>
         </div>
 
-        <script>
-            var getHeader = document.getElementById('header');
-            
-            var getMenuMobile = document.getElementById('menu-mobile');
+        <!-- playlist -->
+        <div class="playlist">
 
-            var getHeightHeader = getHeader.clientHeight;
-            
-            // Close/ open mobile menu
-            getMenuMobile.onclick = function() {
-                var isClose = (getHeader.clientHeight === getHeightHeader);
-                if(isClose) {
-                    getHeader.style.height = 'auto';
-                }
-                else {
-                    getHeader.style.height = null;
-                }
-            }
+        </div>
+    </div>
 
-            // Hide menu header when I select the menu item (band, tour, contact)
-            var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
-            for(var i = 0; i < menuItems.length; i++) {
-                var menuItem = menuItems[i];
-                
-                menuItem.onclick = function(event) {
-                    var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav')
-                    if(isParentMenu) {
-                        event.preventDefault();
-                    }
-                    else {
-                        getHeader.style.height = null;
-                    }
-                }
-            }
 
-        </script>
+    <script src="./assets/js/main.js"></script>
+</body>
 
-    </body>
-    
-    </html>
+</html>
